@@ -182,7 +182,9 @@ function Game(elementId) {
     this.resetButton.appendChild(document.createTextNode('Reset Game'));
     this.resetButton.style.float = 'right';
     this.resetButton.style.width = '100%';
-    this.resetButton.style.height = '70px';
+    this.resetButton.style.height = '20px';
+    this.resetButton.style.background = 'red';
+    this.resetButton.style.color = 'white';
     this.mainElement.appendChild(this.resetButton);
 
     backgroundMove = setInterval(function() {
@@ -263,7 +265,7 @@ function Game(elementId) {
         this.car.height + this.car.y >= this.enemyArray[x].y) {
 
         clearInterval(backgroundMove);
-        console.log('car crash');
+        // console.log('car crash');
 
           while (that.mainElement.hasChildNodes()) {
             that.mainElement.removeChild(that.mainElement.lastChild);
