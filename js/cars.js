@@ -527,5 +527,5 @@ function Game(elementId) {
 
 var game = new Game(gameDiv);
 game.create();
-// var game1 = new Game(gameDiv1);
-// game1.create();
+var game1 = new Game(gameDiv1);
+game1.create();
